@@ -11,5 +11,8 @@ data class Task(
     val title: String,
     val scheduledAt: String,
     val priority: TaskPriority,
-    val isCompleted: Boolean = false
+    val isCompleted: Boolean = false,
+    val description: String = "",
+    val scheduledDate: String? = null,
+    val scheduledTime: String? = null
 )

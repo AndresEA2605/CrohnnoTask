@@ -1,13 +1,15 @@
 package com.example.crohnnotask
 
 import android.app.Application
-import com.example.crohnnotask.data.repository.InMemoryTaskRepository
+import com.example.crohnnotask.data.local.CrohnnoTaskDatabase
+import com.example.crohnnotask.data.repository.RoomTaskRepository
 import com.example.crohnnotask.domain.usecase.ObserveTasksUseCase
 import com.example.crohnnotask.domain.usecase.ToggleTaskCompletionUseCase
 
 class CrohnnoTaskApplication : Application() {
     val container by lazy {
-        val taskRepository = InMemoryTaskRepository()
+        val database = CrohnnoTaskDatabase.getInstance(this)
+        val taskRepository = RoomTaskRepository(database.taskDao())
         AppContainer(
             observeTasks = ObserveTasksUseCase(taskRepository),
             toggleTaskCompletion = ToggleTaskCompletionUseCase(taskRepository)

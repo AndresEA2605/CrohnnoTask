@@ -4,7 +4,7 @@ Aplicación nativa Android para organizar tareas con entrada por voz. Este repos
 
 ## Estado actual
 
-El dashboard en español muestra tareas de ejemplo y permite marcarlas como completadas. La pantalla consume estado desde un ViewModel; el dominio define el modelo, el repositorio y los casos de uso, y la capa de datos ofrece un repositorio en memoria. Las tareas todavía no persisten al cerrar la app.
+El dashboard en español muestra tareas y permite marcarlas como completadas. La UI consume estado desde un ViewModel; el dominio define el modelo y los casos de uso, y Room guarda las tareas localmente. La consulta muestra primero las pendientes, luego ordena por prioridad alta, media y baja, y usa horario y título para desempatar. En una instalación nueva se insertan tres tareas de ejemplo.
 
 ## Tecnologías
 
@@ -12,7 +12,8 @@ El dashboard en español muestra tareas de ejemplo y permite marcarlas como comp
 - Jetpack Compose y Material 3
 - MVVM con `StateFlow` para el estado de presentación
 - Capas separadas para dominio, datos y presentación
-- Room y reconocimiento de voz planificados
+- Room con KSP para persistencia local
+- Reconocimiento de voz planificado
 
 ## Abrir el proyecto
 
@@ -20,9 +21,8 @@ Abre esta carpeta desde Android Studio. Se requiere Android SDK 35 y JDK 17. And
 
 ## Próximas iteraciones
 
-1. Persistir las tareas con Room y ordenarlas con una estrategia de prioridad definida.
-2. Añadir formulario de alta/edición y entrada por voz con permisos y manejo del ciclo de vida.
-3. Incorporar navegación, preferencias, accesibilidad y pantallas restantes.
+1. Añadir formulario de alta/edición y entrada por voz con permisos y manejo del ciclo de vida.
+2. Incorporar navegación, preferencias, accesibilidad y pantallas restantes.
 
 ## Identidad visual
 

@@ -1,4 +1,4 @@
-# VocalFlow
+# CrohnnoTask
 
 Aplicación nativa Android para organizar tareas con entrada por voz. Este repositorio inicia la entrega universitaria con Kotlin, Jetpack Compose y Material 3.
 
@@ -26,4 +26,4 @@ Abre esta carpeta desde Android Studio. Se requiere Android SDK 35 y JDK 17. And
 
 ## Identidad visual
 
-Nombre provisional: VocalFlow. La pantalla usa una paleta violeta, superficies claras y tarjetas Material 3. El saludo y las tareas son datos demostrativos que se reemplazarán por información configurable.
+Nombre provisional: CrohnnoTask. La pantalla usa una paleta violeta, superficies claras y tarjetas Material 3. El saludo y las tareas son datos demostrativos que se reemplazarán por información configurable.

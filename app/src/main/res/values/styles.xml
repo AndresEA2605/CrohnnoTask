@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.VocalFlow" parent="android:style/Theme.Material.Light.NoActionBar">
+    <style name="Theme.CrohnnoTask" parent="android:style/Theme.Material.Light.NoActionBar">
         <item name="android:fontFamily">sans</item>
         <item name="android:statusBarColor">#F7F7FC</item>
         <item name="android:navigationBarColor">#F7F7FC</item>

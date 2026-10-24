@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "VocalFlow"
+rootProject.name = "CrohnnoTask"
 include(":app")

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.vocalflow"
+    namespace = "com.example.crohnnotask"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.vocalflow"
+        applicationId = "com.example.crohnnotask"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

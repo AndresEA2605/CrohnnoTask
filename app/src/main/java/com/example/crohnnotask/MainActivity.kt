@@ -1,4 +1,4 @@
-package com.example.vocalflow
+package com.example.crohnnotask
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -67,7 +67,7 @@ private fun Dashboard() {
     var showMessage by remember { mutableStateOf(false) }
 
     Column(Modifier.fillMaxSize().padding(horizontal = 22.dp, vertical = 28.dp)) {
-        Text("VOCALFLOW", color = Violet, fontSize = 12.sp, fontWeight = FontWeight.Bold, letterSpacing = 2.sp)
+        Text("CROHNNOTASK", color = Violet, fontSize = 12.sp, fontWeight = FontWeight.Bold, letterSpacing = 2.sp)
         Spacer(Modifier.height(22.dp))
         Text("Hola, Alex 👋", color = Ink, fontSize = 29.sp, fontWeight = FontWeight.Bold)
         Text("Un paso a la vez. Hoy es un buen día.", color = Color(0xFF777486), fontSize = 14.sp)
